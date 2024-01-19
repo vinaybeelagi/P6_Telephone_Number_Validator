@@ -53,4 +53,10 @@ userInput.addEventListener('keydown', e => {
       userInput.value = '';
     }
   });
+
+  // Event listener for the 'Clear' button
+clearBtn.addEventListener('click', () => {
+    resultsDiv.textContent = '';
+  });
+  
   
