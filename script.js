@@ -46,3 +46,11 @@ checkBtn.addEventListener('click', () => {
     userInput.value = '';
   });
   
+  // Event listener for the 'Enter' key press in the input field
+userInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      checkValidNumber(userInput.value);
+      userInput.value = '';
+    }
+  });
+  
