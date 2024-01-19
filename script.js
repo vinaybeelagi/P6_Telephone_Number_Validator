@@ -40,3 +40,9 @@ const checkValidNumber = input => {
     resultsDiv.appendChild(pTag);
   };
   
+  // Event listener for the 'Check' button
+checkBtn.addEventListener('click', () => {
+    checkValidNumber(userInput.value);
+    userInput.value = '';
+  });
+  
